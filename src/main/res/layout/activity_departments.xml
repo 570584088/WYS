@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:textColor="@color/Black"
+            android:textSize="20sp"
+            android:background="@null"
+            android:layout_marginLeft="5dp"
+            android:drawableLeft="@mipmap/back"
+            android:gravity="center_vertical|left"
+            android:id="@+id/but_department_back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/depart_title"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#e8e7e7"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <com.example.myapplication.widght.MyListView
+            android:id="@+id/mylistView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scrollbars="none"
+            android:divider="@null"
+            android:background="#ffffff">
+        </com.example.myapplication.widght.MyListView>
+
+        <com.example.myapplication.widght.MyListView
+            android:id="@+id/subListView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scrollbars="none"
+            android:divider="@null"
+            android:background="#ffffff"
+            ></com.example.myapplication.widght.MyListView>
+    </LinearLayout>
+
+
+
+</LinearLayout>

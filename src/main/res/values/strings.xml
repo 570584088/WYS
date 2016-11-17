@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="back">返回</string>
+    <string name="depart_title">常见科室</string>
+    <string name="drug_title">常见药品</string>
+    <string name="illtext_title">自查</string>
+</resources>
